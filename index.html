@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <span class="navbar-brand mb-0 h1">Practica Montecarlo - Corrección Evaluación</span>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="card-body">
+            <h4 class="card-title" align="left">Estudiante: Carreño Reyes Erick Roger</h4>
+            <h4 class="card-title" align="left">Curso: 6to Nivel; Paralelo: "B"</h4>
+            <h4 class="card-title" align="left">Asignatura: Modelamiento y Simulación</h4>
+            <h3 class="card-title" align="center">Ejercicio 1</h3>
+            <br>
+            <p class="card-text">1. Tratando de determinar el número óptimo de autos comprar. El costo promedio anual de
+                un auto es de $ 75.000. Además, está compañía ha recopilado las siguientes probabilidades de operación:
+            </p>
+        </div>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Número de autos alquilados</th>
+                    <th scope="col">0</th>
+                    <th scope="col">1</th>
+                    <th scope="col">2</th>
+                    <th scope="col">3</th>
+                    <th scope="col">4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Probabilidad</th>
+                    <td>0.10</td>
+                    <td>0.10</td>
+                    <td>0.25</td>
+                    <td>0.30</td>
+                    <td>0.25</td>
+                </tr>
+                <tr>
+                    <th scope="row">Número de días de alquiler por auto</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <th scope="row">Probabilidad</th>
+                    <td>0.40</td>
+                    <td>0.35</td>
+                    <td>0.15</td>
+                    <td>0.10</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <p class="card-text">
+            Si el alquiler diario por auto es de $ 700, el costo de no tener un auto disponible cuando se solicita
+            es de $ 400 y el costo de tener un auto ocioso durante un día es de $ 100, ¿cuál es la cantidad de autos
+            que debería comprar la compañía? Asuma que un auto que se alquila está disponible al día siguiente.
+
+            Simule el sistema para un año de 360 días (para la evaluación 15 días de funcionamiento) y muestre un
+            análisis de costos de los 15 días simulados.
+        </p>
+        <br><br>
+        <div class="card-body">
+            <h3 class="card-title" align="center">Ejercicio 2</h3>
+            <br>
+            <p class="card-text">2. Los vehículos de una planta están sometidos a mantenimiento preventivo. Todas las
+                labores de mantenimiento pueden ser efectuadas por un hombre, pero en algunos casos el trabajo puede ser
+                realizado en menos tiempo por un equipo de dos hombres. Con un solo hombre el tiempo para efectuar el
+                mantenimiento de un vehículo son: 1,25; 1,50; 1,75; ó 2 horas con probabilidades de 0,15; 0,25; 0,40; y
+                0,20 respectivamente. Con dos hombres se requieren 0,50; 0,75; 1,00; ó 1,25 horas con probabilidades de
+                0,25; 0,35; 0,30; y 0,10 respectivamente. Cada miembro del equipo recibe un pago de $4,50 por hora y un
+                sobresueldo de $1 por hora por equipo. Utilizando los siguientes números aleatorios, determinar si el
+                mantenimiento es más económico con un solo hombre o con el equipo de dos hombres.
+            </p>
+        </div>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">1</th>
+                    <th scope="col">2</th>
+                    <th scope="col">3</th>
+                    <th scope="col">4</th>
+                    <th scope="col">5</th>
+                    <th scope="col">6</th>
+                    <th scope="col">7</th>
+                    <th scope="col">8</th>
+                    <th scope="col">9</th>
+                    <th scope="col">10</th>
+                    <th scope="col">11</th>
+                    <th scope="col">12</th>
+                    <th scope="col">13</th>
+                    <th scope="col">14</th>
+                    <th scope="col">15</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">0.13</th>
+                    <td>0.95</td>
+                    <td>0.62</td>
+                    <td>0.71</td>
+                    <td>0.54</td>
+                    <td>0.83</td>
+                    <td>0.54</td>
+                    <td>0.63</td>
+                    <td>0.95</td>
+                    <td>0.24</td>
+                    <td>0.02</td>
+                    <td>0.57</td>
+                    <td>0.37</td>
+                    <td>0.02</td>
+                    <td>0.56</td>
+                </tr>
+                <tr>
+                    <th scope="row">0.90</th>
+                    <td>0.41</td>
+                    <td>0.86</td>
+                    <td>0.18</td>
+                    <td>0.80</td>
+                    <td>0.70</td>
+                    <td>0.09</td>
+                    <td>0.30</td>
+                    <td>0.98</td>
+                    <td>0.23</td>
+                    <td>0.85</td>
+                    <td>0.23</td>
+                    <td>0.89</td>
+                    <td>0.65</td>
+                    <td>0.99</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
