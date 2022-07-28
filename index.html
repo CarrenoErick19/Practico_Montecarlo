@@ -72,6 +72,235 @@
             Simule el sistema para un año de 360 días (para la evaluación 15 días de funcionamiento) y muestre un
             análisis de costos de los 15 días simulados.
         </p>
+        <h3>Solución: </h3>
+        <br>
+        <p style='text-align: justify;'> Realizamos el cuadro de las probabilidades para obtener la probabilidad acumulada </p>
+        <div>
+            <table class="table table-responsive " >
+                <thead>
+                    <tr>
+                        <th>N. Dias de alquiler por auto</th>
+                        <th>Probabilidad </th>
+                        <th>Probabilidad Acumulada</th>
+                        <th>R. Menor</th>
+                        <th>R. Mayor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0.4</td>
+                        <td>0.4</td>
+                        <td>0</td>
+                        <td>0.4</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>0.35</td>
+                        <td>0.75</td>
+                        <td>0.41</td>
+                        <td>0.75</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>0.15</td>
+                        <td>0.9</td>
+                        <td>0.76</td>
+                        <td>0.9</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>0.1</td>
+                        <td>1</td>
+                        <td>0.91</td>
+                        <td>1</td>
+                    </tr>
+                    
+                    <tr>
+                        <th>R. Mayor</th>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <br><br>
+        <p style='text-align: justify;'>Luego procedemos con la simulación  de Montecarlo con el objetivo de resolver  
+            cual es la cantidad exacta de vehículos que necesita la empresa de rentas.</p>
+        <div>
+            <table class="table table-responsive " >
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>N. Aleaotiros Autos</th>
+                        <th>N. Aleaotiros Dias</th>
+                        <th>Autos Alquilados</th>
+                        <th>Días Alquilados</th>
+                        <th>Valor de Alquilar Autos</th>
+                        <th>Costo de no tener Auto </th>
+                        <th>Costo de Oscio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0.13089</td>
+                        <td>0.66119</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>700</td>
+                        <td>400</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>0.96696</td>
+                        <td>0.97184</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>0.78853</td>
+                        <td>0.30863</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>0.88534</td>
+                        <td>0.65890</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>0.51116</td>
+                        <td>0.77847</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>0.36096</td>
+                        <td>0.28647</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>0.69644</td>
+                        <td>0.65420</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>0.79794</td>
+                        <td>0.00786</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>0.87306</td>
+                        <td>0.51109</td>
+                        <td>4</td>
+                        <td>2</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>0.29751</td>
+                        <td>0.30685</td>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>0.95052</td>
+                        <td>0.06456</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>0.70872</td>
+                        <td>0.55139</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>0.93587</td>
+                        <td>0.29237</td>
+                        <td>4</td>
+                        <td>1</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>0.16929</td>
+                        <td>0.04104</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>700</td>
+                        <td>400</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>0.62718</td>
+                        <td>0.09312</td>
+                        <td>3</td>
+                        <td>1</td>
+                        <td>1400</td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
         <br><br>
         <div class="card-body">
             <h3 class="card-title" align="center">Ejercicio 2</h3>
@@ -144,7 +373,239 @@
 
             </tbody>
         </table>
-    </div>
+        <h3>Solución: </h3>
+        <br>
+        <p style='text-align: justify;'>   Realizando el cuadro de las probabilidades para obtener la probabilidad acumulada
+                cuando solo labora una sola persona </p>
+    <div>
+        <div>
+            <table class="table table-responsive " >
+                <thead>
+                    <tr>
+                        <th>Tiempo en Horas</th>
+                        <th>Probabilidad </th>
+                        <th>Probabilidad Acumulada</th>
+                        <th>R. Menor</th>
+                        <th>R. Mayor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.25</td>
+                        <td>0.15</td>
+                        <td>0.15</td>
+                        <td>0</td>
+                        <td>0.15</td>
+                    </tr>
+                    <tr>
+                        <td>1,50</td>
+                        <td>0.25</td>
+                        <td>0.40</td>
+                        <td>0.16</td>
+                        <td>0.40</td>
+                    </tr>
+                    <tr>
+                        <td>1.75</td>
+                        <td>0.40</td>
+                        <td>0.80</td>
+                        <td>0.41</td>
+                        <td>0.80</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1.25</td>
+                        <td>1</td>
+                        <td>0.81</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+            <p style='text-align: justify;'>  Procedemos con 
+                la simulación cuando solo labora un hombre.</p>
+        <br>
+
+        <div>
+            <table class="table table-responsive " >
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>N. Aleaotiros</th>
+                        <th>Horas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0.38</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>0.89</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>0.40</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>0.02</td>
+                        <td>1.24</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>0.99</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>0.37</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>0.46</td>
+                        <td>1.75</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>0.25</td>
+                        <td>1.50</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>0.02</td>
+                        <td>1.24</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>0.20</td>
+                        <td>1.50</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br><br>
+        <p style='text-align: justify;'>   Realizamos el segundo cuadro de probabilidades para obtener 
+            la probabilidad acumulada cuando la labor la realizan dos hombres.</p>
+        
+        <div>
+            <table class="table table-responsive " >
+                <thead>
+                    <tr>
+                        <th>Tiempo en Horas</th>
+                        <th>Probabilidad </th>
+                        <th>Probabilidad Acumulada</th>
+                        <th>R. Menor</th>
+                        <th>R. Mayor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0.50</td>
+                        <td>0.25</td>
+                        <td>0.25</td>
+                        <td>0</td>
+                        <td>0.25</td>
+                    </tr>
+                    <tr>
+                        <td>0.75</td>
+                        <td>0.35</td>
+                        <td>0.60</td>
+                        <td>0.26</td>
+                        <td>0.60</td>
+                    </tr>
+                    <tr>
+                        <td>1.00</td>
+                        <td>0.30</td>
+                        <td>0.90</td>
+                        <td>0.61</td>
+                        <td>0.90</td>
+                    </tr>
+                    <tr>
+                        <td>1.25</td>
+                        <td>0.10</td>
+                        <td>1</td>
+                        <td>0.91</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br>
+        
+        <p style='text-align: justify;'>  Procedemos ahora a realizar la simulación cuando laboran dos hombres.</p>
+
+        <div>
+            <table class="table table-responsive " >
+                <thead>
+                    <tr>
+                        <th>Evento</th>
+                        <th>N. Aleaotiros</th>
+                        <th>Horas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>0.78</td>
+                        <td>1.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>0.92</td>
+                        <td>1.25</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>0.34</td>
+                        <td>0.75</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>0.91</td>
+                        <td>1.25</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>0.43</td>
+                        <td>0.75</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>0.59</td>
+                        <td>0.75</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>0.66</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>0.16</td>
+                        <td>0.50</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>0.34</td>
+                        <td>0.75</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>0.87</td>
+                        <td>1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    
 </body>
 
 </html>
